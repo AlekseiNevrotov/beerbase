@@ -287,11 +287,14 @@ li {
     line-height: 25px;
   }
   section p,
-  .hookah-desc,
-  .events-desc,
   li {
     font-size: 15px;
     line-height: 15px;
+  }
+  .hookah-desc,
+  .events-desc {
+    font-size: 20px;
+    line-height: 20px;
   }
   .contacts-wrapper {
     grid-template-columns: 1fr;
