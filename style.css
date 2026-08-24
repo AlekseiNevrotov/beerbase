@@ -171,6 +171,64 @@ li {
   color: #F5F5F5;
   font-weight: 400;
 }
+.banner-slider {
+  position: relative;
+  
+  margin-bottom: 40px;
+  max-width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  object-fit: cover;
+  display: none;
+  border-radius: 20px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(46, 46, 46, 0.7);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: rgba(245, 245, 245, 0.8);
+  color: #000;
+}
+
+.slider-btn.prev {
+  left: 15px;
+}
+
+.slider-btn.next {
+  right: 15px;
+}
     .contacts-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr; 

@@ -54,7 +54,17 @@
     <section>
       <h2>Мероприятия</h2>
 <p class="events-desc">Спортивные трансляции, вечеринки c разнообразными настольными играми и дегустации.</p>    </section>
-        <section>
+        <div class="banner-slider">
+    <div class="slides">
+      <img src="beerhookah2.jpg" alt="Мероприятие 1" class="slide active" />
+      <img src="hookah.png" alt="Мероприятие 2" class="slide" />
+      <img src="sale.jpg" alt="Мероприятие 3" class="slide" />
+      <!-- Добавь свои фотки здесь -->
+    </div>
+    <button class="slider-btn prev" aria-label="Предыдущее фото"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn next" aria-label="Следующее фото"><i class="fas fa-chevron-right"></i></button>
+  </div>
+<section>
       <h2>Контакты</h2>
       <div class="contacts-wrapper">
         <div class="contacts-info">
@@ -94,5 +104,6 @@
     faLink.href = 'https://cloudflare.com';
     document.head.appendChild(faLink);
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
