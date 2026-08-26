@@ -182,24 +182,20 @@ li {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
-
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
   height: 100%;
 }
-
 .slide {
   min-width: 100%;
   object-fit: cover;
   display: none;
   border-radius: 10px;
 }
-
 .slide.active {
   display: block;
 }
-
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -216,16 +212,13 @@ li {
   transition: background 0.3s;
   z-index: 10;
 }
-
 .slider-btn:hover {
   background: rgba(245, 245, 245, 0.8);
   color: #000;
 }
-
 .slider-btn.prev {
   left: 15px;
 }
-
 .slider-btn.next {
   right: 15px;
 }
@@ -302,6 +295,38 @@ li {
       line-height: 15px;
       font-weight: 400;
     }
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.spinner {
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top: 5px solid #F5F5F5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
     @media (max-width: 600px) {
   body {
     padding: 10px;
