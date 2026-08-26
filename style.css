@@ -322,7 +322,7 @@ li {
   pointer-events: none;
 }
 .spinner {
-  border: 5px solid rgba(255, 255, 255, 0.2);
+  border: 5px solid #2E2E2E;
   border-top: 5px solid #F5F5F5;
   border-radius: 50%;
   width: 50px;
