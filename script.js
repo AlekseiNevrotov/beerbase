@@ -28,6 +28,10 @@ function hideLoader() {
   loader.classList.add('hidden');
   setTimeout(() => {
     loader.remove();
+    const container = document.querySelector('.container');
+    if (container) {
+      container.classList.add('menu-animated');
+    }
   }, 600);
 }
 window.addEventListener('load', () => {
@@ -40,3 +44,11 @@ window.addEventListener('load', () => {
   }
 });
 setTimeout(hideLoader, 10000);
+window.addEventListener('load', () => {
+  const menuItems = document.querySelectorAll('.menu-item');
+  menuItems.forEach(item => {
+    item.style.animationPlayState = 'paused';
+    void item.offsetWidth;
+    item.style.animationPlayState = 'running';
+  });
+});

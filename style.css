@@ -327,6 +327,33 @@ li {
   0% { transform: rotate(0deg);}
   100% { transform: rotate(360deg);}
 }
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+.menu-animated .menu-item {
+  animation: fadeUp 0.6s forwards;
+}
+.menu-animated .menu-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu-animated .menu-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu-animated .menu-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
     @media (max-width: 600px) {
   body {
     padding: 10px;
