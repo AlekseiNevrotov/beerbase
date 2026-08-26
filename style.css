@@ -200,7 +200,7 @@ li {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(46, 46, 46, 0.5);
+  background: rgba(125, 125, 125, 0.5);
   border: none;
   color: none;
   font-size: 20px;
@@ -213,7 +213,7 @@ li {
   z-index: 10;
 }
 .slider-btn:hover {
-  background: #2E2E2E;
+  background: #7d7d7d;
   color: none;
 }
 .slider-btn:active {
@@ -289,8 +289,13 @@ li {
       text-decoration: none;
     }
     .socials a:hover {
-      color: #F5F5F5;
+      color: #D1D1D1;
     }
+    .socials a:active {
+  color: #D1D1D1;
+  transform: scale(0.85);
+  transition: transform 0.1s ease;
+}
     section p {
       text-align: left;
       color: #F5F5F5;
