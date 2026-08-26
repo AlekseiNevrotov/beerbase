@@ -200,10 +200,10 @@ li {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(46, 46, 46, 0.7);
+  background: rgba(46, 46, 46, 0.5);
   border: none;
-  color: #fff;
-  font-size: 24px;
+  color: none;
+  font-size: 20px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -213,8 +213,14 @@ li {
   z-index: 10;
 }
 .slider-btn:hover {
-  background: rgba(245, 245, 245, 0.8);
-  color: #000;
+  background: #2E2E2E;
+  color: none;
+}
+.slider-btn:active {
+  transform: translateY(-50%) scale(0.95);
+  background: #D1D1D1;
+  color: none;
+  transition: transform 0.1s ease;
 }
 .slider-btn.prev {
   left: 15px;
