@@ -458,6 +458,9 @@ li {
     font-size: 15px;
     line-height: 15px;
   }
+  .contacts-info p {
+      margin-bottom: 5px;
+    }
   .map-container {
     width: 100% !important;
     max-width: none !important;
